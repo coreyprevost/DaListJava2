@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DaListJava</string>
+    <string name="txt_btn_AddToList">Add To List</string>
+    <string name="txt_et_Textbox">Enter Task</string>
 </resources>
