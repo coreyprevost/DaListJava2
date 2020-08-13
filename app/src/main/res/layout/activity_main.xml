@@ -7,18 +7,19 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="413dp"
-        android:layout_height="674dp"
-        app:layout_constraintBottom_toTopOf="@+id/divider"
+        android:layout_width="410dp"
+        android:layout_height="637dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/Textbox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" >
+        app:layout_constraintVertical_bias="1.0">
 
         <ListView
             android:id="@+id/listView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
     </LinearLayout>
 
     <EditText

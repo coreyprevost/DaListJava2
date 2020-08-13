@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "407622295667",
+    "firebase_url": "https://dalistjava.firebaseio.com",
+    "project_id": "dalistjava",
+    "storage_bucket": "dalistjava.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407622295667:android:d043e5dc5c0c2ea68d4a06",
+        "android_client_info": {
+          "package_name": "com.coreypre.dalistjava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407622295667-peamjbticoi9ss45reuga5brbs8m2cjk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.coreypre.dalistjava",
+            "certificate_hash": "fa74d1384e35a688629cac3f350189e37a5aa10c"
+          }
+        },
+        {
+          "client_id": "407622295667-irv6mfmsnik1pkn78bqia1e9b3e180vu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMBi59fqUUHge7L30urEhuER9hlZqb0wI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407622295667-irv6mfmsnik1pkn78bqia1e9b3e180vu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
