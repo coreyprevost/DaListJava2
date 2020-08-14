@@ -15,6 +15,10 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.security.SecureRandom;
 import java.util.ArrayList;
 
@@ -23,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
     private ArrayAdapter<String> itemAdapter;
     private ListView listView;
     private Button button;
+    private DatabaseReference reff;
+    private Member member = new Member(items);
+
 
 
 
@@ -33,11 +40,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+        reff = FirebaseDatabase.getInstance().getReference().child("Member");
         listView = findViewById(R.id.listView);
         button = findViewById(R.id.btn_AddToList);
-
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,7 +82,9 @@ public class MainActivity extends AppCompatActivity {
              Toast.makeText(getApplicationContext(),"Please enter text...",Toast.LENGTH_LONG);
 
          }
-
+         member.setListArray(items);
+         reff.push().setValue(member);
+         Toast.makeText(this,"Item Added", Toast.LENGTH_LONG).show();
 
     }
 
